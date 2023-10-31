@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link,useNavigate } from 'react-router-dom'
+import { AiOutlineGooglePlus, AiOutlineGithub } from 'react-icons/ai'
+import { FiFacebook } from 'react-icons/fi'
+import { CiTwitter } from 'react-icons/ci'
 
 const Register = () => {
   return (
@@ -33,7 +36,27 @@ const Register = () => {
                 <div className='flex items-center mb-3 gap-3 justify-center'>
                     <p>Already have an account ? <Link to='/login'>Signin here</Link></p>
                 </div>
-              
+                <div className='w-full flex justify-center items-center mb-3'>
+                            <div className='w-[45%] bg-slate-700 h-[1px]'></div>
+                            <div className='w-[10%] flex justify-center items-center'>
+                                <span className='pb-1'>Or</span>
+                            </div>
+                            <div className='w-[45%] bg-slate-700 h-[1px]'></div>
+                        </div>
+                        <div className='flex justify-center items-center gap-3'>
+                            <div className='w-[35px] h-[35px] flex rounded-md bg-orange-700 shadow-lg hover:shadow-orange-700/50 justify-center cursor-pointer items-center overflow-hidden'>
+                                <span><AiOutlineGooglePlus /></span>
+                            </div>
+                            <div className='w-[35px] h-[35px] flex rounded-md bg-indigo-700 shadow-lg hover:shadow-indigo-700/50 justify-center cursor-pointer items-center overflow-hidden'>
+                                <span><FiFacebook /></span>
+                            </div>
+                            <div className='w-[35px] h-[35px] flex rounded-md bg-cyan-700 shadow-lg hover:shadow-cyan-700/50 justify-center cursor-pointer items-center overflow-hidden'>
+                                <span><CiTwitter /></span>
+                            </div>
+                            <div className='w-[35px] h-[35px] flex rounded-md bg-purple-700 shadow-lg hover:shadow-purple-700/50 justify-center cursor-pointer items-center overflow-hidden'>
+                                <span><AiOutlineGithub /></span>
+                            </div>
+                            </div>
     
             </form>
         </div>
